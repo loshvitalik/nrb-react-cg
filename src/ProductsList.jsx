@@ -132,7 +132,8 @@ export default class ProductsList extends React.Component {
     var products = this.state.products;
     products.forEach(p => p.isAdded = false);
     this.setState({
-      products: products
+      products: products,
+      isCartView: false
     })
   }
 }
