@@ -31,7 +31,7 @@ export default class CartForm extends React.Component {
     super();
     this.state = {
       promocode: '',
-      offerTime: 10 * 60,
+      offerTime: Math.floor(Math.random() * (20 * 60 - 5 * 60 + 1) + 5 * 60),
       deliveryType: ''
     };
     this.handleCheckPromo = this.handleCheckPromo.bind(this);
